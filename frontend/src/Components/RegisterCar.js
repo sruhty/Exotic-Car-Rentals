@@ -275,7 +275,7 @@ class RegisterCar extends React.Component{
                         <div className="row">
                             <div className="col-md-12">
                                 <div className="x_offer_car_heading_wrapper float_left">
-                                    <h4>Rent Your Car</h4>
+                                    <h4>ADD NEW Car</h4>
                                     <h3>INCLUDE SOME DETAILS</h3>
                                 </div>
                             </div>
