@@ -56,7 +56,7 @@ class RegisterCar extends React.Component{
                 });
                 this.props.history.push("/")
             }else{
-                this.setState({title:{name:"Rent Your Car",link:"rent car"}})
+                this.setState({title:{name:"ADD NEW CAR",link:"rent car"}})
             }
         }
     }
