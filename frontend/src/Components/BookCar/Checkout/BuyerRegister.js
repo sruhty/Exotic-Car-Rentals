@@ -1,7 +1,9 @@
 import React from "react";
 import {FormText} from "reactstrap";
 import DropdownList from "react-widgets/lib/DropdownList";
-import {Location} from "../../../globalUtilities/CONST";
+import { Location } from "../../../globalUtilities/CONST";
+import { StripeProvider } from 'react-stripe-elements';
+import { CardElement } from 'react-stripe-elements';
 
 const BuyerRegister =({onChange,error})=> {
     return (
@@ -91,6 +93,9 @@ const BuyerRegister =({onChange,error})=> {
                 <div className="radio">
                     <input type="radio" name="ratio" id="stripe" defaultValue="option1"/>
                     <label htmlFor="stripe">Stripe</label>
+                    <StripeProvider apiKey="pk_test_51MkeOLDvoYKK7OyOexgRcD7MhFBkJlthasbheNfDXtYyEDAhodHFJCyVlSUoVUFirEc111MKufywKy2IlWzzZKEi00g8GPR0XN">
+                            // Payment form goes here
+                            </StripeProvider>
                 </div>
             </div>
             <hr/>
