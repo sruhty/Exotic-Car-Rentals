@@ -1,7 +1,17 @@
 import { Vehicle } from "./vehicle.model"
 const { ObjectID } = require("mongodb");
 
+const redis = require("redis");
+const client = redis.createClient({ host: process.env.REDIS_HOST, port: process.env.REDIS_PORT });
+
 export const getCarList = async (req, res) => {
+    client.set("mykey", "myvalue", (req, res) => {
+        console.log("cache setting");
+      });
+      
+      client.get("mykey", (req, res) => {
+        console.log("cache getting");
+      });
     try {
         let  getCategories = []
         const data = req.body;
