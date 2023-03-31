@@ -1,11 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 import {FormText} from "reactstrap";
 import DropdownList from "react-widgets/lib/DropdownList";
 import { Location } from "../../../globalUtilities/CONST";
 import { StripeProvider } from 'react-stripe-elements';
-import { CardElement } from 'react-stripe-elements';
+import StripeForm from "./StripeForm";
 
-const BuyerRegister =({onChange,error})=> {
+
+const BuyerRegister = ({ onChange, error }) => {
+    const [selectedOption, setSelectedOption] = useState(null);
+
+    const handleOptionChange = (e) => {
+      setSelectedOption(e.target.value);
+    }
     return (
         <form className="billing-form">
             <ul className="list-unstyled row">
@@ -91,28 +97,10 @@ const BuyerRegister =({onChange,error})=> {
                     <label htmlFor="paypal">Paypal</label>
                 </div>
                 <div className="radio">
-                    <input type="radio" name="ratio" id="stripe" defaultValue="option1"/>
-                    <label htmlFor="stripe">Stripe</label>
+                    
+                    <label> <input type="radio" value="stripe" checked={this.state.selectedOption === 'stripe'} onChange={this.handleOptionChange} />Stripe</label>
                     <StripeProvider apiKey="pk_test_51MkeOLDvoYKK7OyOexgRcD7MhFBkJlthasbheNfDXtYyEDAhodHFJCyVlSUoVUFirEc111MKufywKy2IlWzzZKEi00g8GPR0XN">
-                         <form onSubmit={handleSubmit}>
-                        <label>
-                            Card details
-                            <CardElement />
-                        </label>
-                        <label>
-                            Name
-                            <input type="text" name="name" required />
-                        </label>
-                        <label>
-                            Email
-                            <input type="email" name="email" required />
-                        </label>
-                        <label>
-                            Amount
-                            <input type="number" name="amount" required />
-                        </label>
-                        <button type="submit">Pay</button>
-                        </form>
+                    {this.state.selectedOption === 'stripe' && <StripeForm/>}
                     </StripeProvider>
                     
                 </div>
