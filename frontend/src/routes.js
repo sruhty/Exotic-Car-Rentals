@@ -19,7 +19,7 @@ import PrivacyPolicy from "./Components/PrivacyPolicy";
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 
 
-/*For Admin*/
+/*For user*/
 export const routes = [
   { path: "/", name: "Home", component: Home, exact: true },
   { path: "/login", name: "Login", component: Login },
