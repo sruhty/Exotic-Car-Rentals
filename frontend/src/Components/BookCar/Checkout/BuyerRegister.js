@@ -94,8 +94,27 @@ const BuyerRegister =({onChange,error})=> {
                     <input type="radio" name="ratio" id="stripe" defaultValue="option1"/>
                     <label htmlFor="stripe">Stripe</label>
                     <StripeProvider apiKey="pk_test_51MkeOLDvoYKK7OyOexgRcD7MhFBkJlthasbheNfDXtYyEDAhodHFJCyVlSUoVUFirEc111MKufywKy2IlWzzZKEi00g8GPR0XN">
-                            // Payment form goes here
-                            </StripeProvider>
+                         <form onSubmit={handleSubmit}>
+                        <label>
+                            Card details
+                            <CardElement />
+                        </label>
+                        <label>
+                            Name
+                            <input type="text" name="name" required />
+                        </label>
+                        <label>
+                            Email
+                            <input type="email" name="email" required />
+                        </label>
+                        <label>
+                            Amount
+                            <input type="number" name="amount" required />
+                        </label>
+                        <button type="submit">Pay</button>
+                        </form>
+                    </StripeProvider>
+                    
                 </div>
             </div>
             <hr/>
