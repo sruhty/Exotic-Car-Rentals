@@ -2,11 +2,9 @@ import React from "react";
 import {TitleHeader} from "../Comman/TitleHeader";
 import {Loader} from "../globalUtilities/Loader";
 import a1 from "../assets/images/about_img1.jpg"
-import t0 from "../assets/team/Bhavika.jpeg"
+
 import t1 from "../assets/team/Manthan.jpeg"
-import t2 from "../assets/team/Vishal.jpeg"
-import t3 from "../assets/team/Bhumi.jpeg"
-import t4 from "../assets/team/Anas.jpeg"
+
 import HowItWorks from "./Home/HowItWorks";
 
 
@@ -88,127 +86,7 @@ const About =()=>{
                                 <h3>Our Core team</h3>
                             </div>
                         </div>
-                        <div className="col-md-12">
-                            <div className="btc_ln_slider_wrapper">
-                                <div className="owl-carousel owl-theme">
-                                    <div className="item">
-                                        <div className="btc_team_slider_cont_main_wrapper">
-                                            <div className="btc_team_img_wrapper">
-                                                <img src={t1} alt="team_img1" height="635px" className="team-image-pic"/>
-                                                <div className="btc_team_social_wrapper">
-                                                    <ul>
-                                                        <li><a href="#"><i className="fa fa-facebook" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-twitter" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-linkedin" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-google-plus" /></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="btc_team_img_cont_wrapper">
-                                                <h4><a href="#">Manthan Patel</a></h4>
-                                                <p>(CEO)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="btc_team_slider_cont_main_wrapper">
-                                            <div className="btc_team_img_wrapper">
-                                                <img src={t2} alt="team_img1" height="635px" className="team-image-pic" />
-                                                <div className="btc_team_social_wrapper">
-                                                    <ul>
-                                                        <li><a href="#"><i className="fa fa-facebook" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-twitter" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-linkedin" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-google-plus" /></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="btc_team_img_cont_wrapper">
-                                                <h4><a href="#">Vishal Sharma</a></h4>
-                                                <p>(CFO)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="btc_team_slider_cont_main_wrapper">
-                                            <div className="btc_team_img_wrapper">
-                                                <img src={t3} alt="team_img1" height="635px" className="team-image-pic"/>
-                                                <div className="btc_team_social_wrapper">
-                                                    <ul>
-                                                        <li><a href="#"><i className="fa fa-facebook" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-twitter" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-linkedin" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-google-plus" /></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="btc_team_img_cont_wrapper">
-                                                <h4><a href="#">Bhumi Lakhani</a></h4>
-                                                <p>(Expert)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="btc_team_slider_cont_main_wrapper">
-                                            <div className="btc_team_img_wrapper">
-                                                <img src={t0} alt="team_img1" height="635px" className="team-image-pic" />
-                                                <div className="btc_team_social_wrapper">
-                                                    <ul>
-                                                        <li><a href="#"><i className="fa fa-facebook" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-twitter" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-linkedin" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-google-plus" /></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="btc_team_img_cont_wrapper">
-                                                <h4><a href="#">Bhavika Patel</a></h4>
-                                                <p>(Director)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="btc_team_slider_cont_main_wrapper">
-                                            <div className="btc_team_img_wrapper">
-                                                <img src={t4} alt="team_img1" height="635px" className="team-image-pic" />
-                                                <div className="btc_team_social_wrapper">
-                                                    <ul>
-                                                        <li><a href="#"><i className="fa fa-facebook" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-twitter" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-linkedin" /></a>
-                                                        </li>
-                                                        <li><a href="#"><i className="fa fa-google-plus" /></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="btc_team_img_cont_wrapper">
-                                                <h4><a href="#">Anasahmed Patel</a></h4>
-                                                <p>(Engineer)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
