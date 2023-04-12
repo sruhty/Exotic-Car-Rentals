@@ -1,5 +1,6 @@
 import { generateControllers } from "../../modules/query";
 import { Users } from "./users.model";
+const router = express.Router();
 
 
 const ProfileData = async (req, res) => {
@@ -12,6 +13,27 @@ const ProfileData = async (req, res) => {
     res.status(422).send({error: "Error in getting user time info"});
   }
 };
+// API route to fetch user data
+router.get('/user/:email', async (req, res) => {
+  try {
+    const email = req.params.email;
+
+    // Fetch user data based on email ID
+    const user = await User.findOne({ email });
+
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+     // Check if email ID matches the particular email ID you're interested in
+     const isParticularEmail = user.email === 'admin@gmail.com';
+
+     return res.json({ user, isParticularEmail });
+   } catch (error) {
+     return res.status(500).json({ message: 'Server error' });
+   }
+ });
+ 
+ 
 
 const UpdateProfileData = async (req, res) => {
   try {
@@ -45,5 +67,5 @@ const UpdateProfileData = async (req, res) => {
 }
 
 export default generateControllers(Users, {
-   ProfileData,UpdateProfileData,countData
+   ProfileData,UpdateProfileData,countData,router
 });
