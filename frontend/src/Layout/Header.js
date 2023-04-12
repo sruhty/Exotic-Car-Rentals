@@ -119,7 +119,7 @@ class Header extends React.Component {
                                     <li>
 
                                        <Link className="menu-button single_menu" to="/rent-car">
-                                         //   <div><i className="fa fa-camera" aria-hidden="true" /> Rent</div>
+                                            <div><i className="fa fa-camera" aria-hidden="true" /> Rent</div>
                                         </Link>
                                     </li>
                                 </ul>
