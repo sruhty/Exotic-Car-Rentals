@@ -94,7 +94,7 @@ const About =()=>{
                                     <div className="item">
                                         <div className="btc_team_slider_cont_main_wrapper">
                                             <div className="btc_team_img_wrapper">
-                                                <img src={t1} alt="team_img1" height="635px" className="team-image-pic"/>
+                                                
                                                 <div className="btc_team_social_wrapper">
                                                     <ul>
                                                         <li><a href="#"><i className="fa fa-facebook" /></a>
@@ -117,7 +117,7 @@ const About =()=>{
                                     <div className="item">
                                         <div className="btc_team_slider_cont_main_wrapper">
                                             <div className="btc_team_img_wrapper">
-                                                <img src={t2} alt="team_img1" height="635px" className="team-image-pic" />
+                                                
                                                 <div className="btc_team_social_wrapper">
                                                     <ul>
                                                         <li><a href="#"><i className="fa fa-facebook" /></a>
@@ -132,7 +132,7 @@ const About =()=>{
                                                 </div>
                                             </div>
                                             <div className="btc_team_img_cont_wrapper">
-                                                <h4><a href="#">Vishal Sharma</a></h4>
+                                                <h4><a href="#">    </a></h4>
                                                 <p>(CFO)</p>
                                             </div>
                                         </div>
@@ -140,7 +140,7 @@ const About =()=>{
                                     <div className="item">
                                         <div className="btc_team_slider_cont_main_wrapper">
                                             <div className="btc_team_img_wrapper">
-                                                <img src={t3} alt="team_img1" height="635px" className="team-image-pic"/>
+                                              
                                                 <div className="btc_team_social_wrapper">
                                                     <ul>
                                                         <li><a href="#"><i className="fa fa-facebook" /></a>
@@ -155,7 +155,7 @@ const About =()=>{
                                                 </div>
                                             </div>
                                             <div className="btc_team_img_cont_wrapper">
-                                                <h4><a href="#">Bhumi Lakhani</a></h4>
+                                                <h4><a href="#">   </a></h4>
                                                 <p>(Expert)</p>
                                             </div>
                                         </div>
@@ -163,7 +163,7 @@ const About =()=>{
                                     <div className="item">
                                         <div className="btc_team_slider_cont_main_wrapper">
                                             <div className="btc_team_img_wrapper">
-                                                <img src={t0} alt="team_img1" height="635px" className="team-image-pic" />
+                                                
                                                 <div className="btc_team_social_wrapper">
                                                     <ul>
                                                         <li><a href="#"><i className="fa fa-facebook" /></a>
@@ -178,7 +178,7 @@ const About =()=>{
                                                 </div>
                                             </div>
                                             <div className="btc_team_img_cont_wrapper">
-                                                <h4><a href="#">Bhavika Patel</a></h4>
+                                                <h4><a href="#">   </a></h4>
                                                 <p>(Director)</p>
                                             </div>
                                         </div>
@@ -186,7 +186,7 @@ const About =()=>{
                                     <div className="item">
                                         <div className="btc_team_slider_cont_main_wrapper">
                                             <div className="btc_team_img_wrapper">
-                                                <img src={t4} alt="team_img1" height="635px" className="team-image-pic" />
+                                               
                                                 <div className="btc_team_social_wrapper">
                                                     <ul>
                                                         <li><a href="#"><i className="fa fa-facebook" /></a>
@@ -201,7 +201,7 @@ const About =()=>{
                                                 </div>
                                             </div>
                                             <div className="btc_team_img_cont_wrapper">
-                                                <h4><a href="#">Anasahmed Patel</a></h4>
+                                                <h4><a href="#">   </a></h4>
                                                 <p>(Engineer)</p>
                                             </div>
                                         </div>

@@ -13,7 +13,7 @@ if (process.env.PLATFORM_NODE_ENV === "development") {
   server = app;
 }
 
-const PORT = process.env.PLATFORM_PORT || 8010;
+const PORT = process.env.PLATFORM_PORT || 8020;
 server.listen(PORT, async () => {
   try {
     console.log(`Server listening on port ${PORT}`);
