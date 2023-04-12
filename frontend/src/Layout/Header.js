@@ -8,6 +8,10 @@ import { profileImage } from "../actions";
 import { toast } from "react-toastify";
 import { Loader } from "../globalUtilities/Loader";
 
+
+   
+  
+
 class Header extends React.Component {
     constructor(props) {
         super(props);
@@ -19,6 +23,7 @@ class Header extends React.Component {
             loading: false,
         }
     }
+    
 
     componentWillReceiveProps(nextProps, nextContext) {
         this.setState({ username: nextProps.token.auth.firstName })
@@ -113,8 +118,8 @@ class Header extends React.Component {
                                     }
                                     <li>
 
-                                        <Link className="menu-button single_menu" to="/rent-car">
-                                            <div><i className="fa fa-camera" aria-hidden="true" /> Rent</div>
+                                       <Link className="menu-button single_menu" to="/rent-car">
+                                         //   <div><i className="fa fa-camera" aria-hidden="true" /> Rent</div>
                                         </Link>
                                     </li>
                                 </ul>

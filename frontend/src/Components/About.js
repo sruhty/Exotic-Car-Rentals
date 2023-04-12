@@ -2,11 +2,7 @@ import React from "react";
 import {TitleHeader} from "../Comman/TitleHeader";
 import {Loader} from "../globalUtilities/Loader";
 import a1 from "../assets/images/about_img1.jpg"
-import t0 from "../assets/team/Bhavika.jpeg"
-import t1 from "../assets/team/Manthan.jpeg"
-import t2 from "../assets/team/Vishal.jpeg"
-import t3 from "../assets/team/Bhumi.jpeg"
-import t4 from "../assets/team/Anas.jpeg"
+
 import HowItWorks from "./Home/HowItWorks";
 
 
@@ -109,7 +105,7 @@ const About =()=>{
                                                 </div>
                                             </div>
                                             <div className="btc_team_img_cont_wrapper">
-                                                <h4><a href="#">Manthan Patel</a></h4>
+                                                <h4><a href="#">  </a></h4>
                                                 <p>(CEO)</p>
                                             </div>
                                         </div>
